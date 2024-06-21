@@ -33,11 +33,11 @@ resetBtn.addEventListener('click',()=>{         //Add event listner on clicking 
 newGameBtn.addEventListener('click',()=>{       //Add event listner on clicking on new game button     
     turnX = true;
     enableBoxes();
-    msgContainer.classList.add('hide')
+    msgContainer.classList.add('hide');
     music3.play();
     count = 0;
-    document.body.style.backgroundImage = "url('gamebackground.avif')";
-    player.innerHTML = "turn for Player 1"
+    document.body.style.backgroundImage = "url('/images/gamebackground.avif')";
+    player.innerHTML = "turn for Player 1";
 });
 
 boxes.forEach((box)=>{                          //Add for each for accesing each box
