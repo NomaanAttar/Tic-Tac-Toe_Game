@@ -3,9 +3,9 @@ let resetBtn = document.querySelector('#reset-btn');
 let newGameBtn = document.querySelector('#new-btn');
 let msgContainer = document.querySelector('.msg-container');
 let msg = document.querySelector('#msg');
-let music = new Audio('mymusic.wav'); 
-let music2 = new Audio('mymusic2.mp3');
-let music3 = new Audio('mymusic3.wav');
+let music = new Audio('/music/mymusic.wav'); 
+let music2 = new Audio('/music/mymusic2.mp3');
+let music3 = new Audio('/music/mymusic3.wav');
 let body = document.querySelector('body');
 let player = document.querySelector('.player');
 
@@ -96,7 +96,7 @@ const showWinner = (winner)=>{                  // function for showing winner
         msg.innerHTML = `Congratulations winner is ${winner}`;
         msgContainer.classList.remove('hide');
         music2.play();
-        document.body.style.backgroundImage = "url('winner.jpg')";
+        document.body.style.backgroundImage = "url('/images/winner.jpg')";
         document.body.style.backgroundSize = "cover";
         disableBoxes();
     },500)
