@@ -73,7 +73,7 @@ const gameDraw =()=>{                           // function for game draw functi
     setTimeout(()=>{
         msg.innerHTML = 'Game was Draw, Play Again!!!';
         msgContainer.classList.remove('hide');
-        document.body.style.backgroundImage = "url('gamebackground.avif')";
+        document.body.style.backgroundImage = "url('/images/gamebackground.avif')";
         disableBoxes();
     },500)
 }
